@@ -1,6 +1,14 @@
 @charset "utf-8";
 
-@media screen and (min-width:768px) {
-    html {
-    }
+.menu ul {
+    margin: 1rem auto;
+    width: 64%;
+}
+.slider-inner, .slide-img {
+    width: 100%;
+    height: auto;
+}
+.slider-outer {
+    height: initial;
+    padding-bottom: 56%;
 }
