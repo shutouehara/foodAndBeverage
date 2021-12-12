@@ -35,11 +35,14 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1;
+  font-feature-settings: "palt" 1;
+  letter-spacing: 1px;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  text-decoration: none;
 }
 
 /* Make images easier to work with */

@@ -21,7 +21,7 @@ Vue.component('fade-in', {
     handleScroll() {
       if (!this.visible) {
         var top = this.$el.getBoundingClientRect().top;
-        this.visible = top < window.innerHeight + 100;
+        this.visible = top < window.innerHeight - 40;
       }
     }
   },
