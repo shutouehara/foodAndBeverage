@@ -19,6 +19,9 @@ a:not([class]) {
 a:not([class]):visited {
     color: rgb(111, 111, 111);
 }
+iframe {
+    max-width: 100%;
+}
 .font-yuji {
     font-family: 'Yuji Syuku', serif;
 }
@@ -302,9 +305,6 @@ a:not([class]):visited {
 .second-floor {
     margin-top: 112px;
     margin-right: 16px;
-}
-.tw iframe {
-    width: 100%;
 }
 .footer-menu {
     display: grid;
