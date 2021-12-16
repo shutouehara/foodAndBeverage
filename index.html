@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Yuji+Syuku&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <title>那覇市久茂地の居酒屋 呑兵衛</title>
+
+    <meta name="description" content="">
+    <link rel="canonical" href="">
+
+    <link rel="icon" href="" sizes="16x16" type="image/png">
+    <link rel="icon" href="" sizes="32x32" type="image/png">
+    <link rel="icon" href="" sizes="62x62" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="" /><!--size:150x15--->
+
+    <meta property="og:locale" content="ja_JP"/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content="">
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="article:published_time" content="2021-11-12T04:42:02+00:00"/>
+    <meta property="article:modified_time" content="2021-11-12T09:25:51+00:00"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content=""/>
+    <meta name="twitter:title" content=""/>
+    <meta name="twitter:image" content=""/>
+
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/pc_style.css" media="screen and (min-width:481px)">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+
+    <script src="./assets/script.js"></script>
+</head>
+<body class="w-f">
+    <header class="header">
+      <div class="logo-area">
+        <a href="/">
+          <p class="logo">
+            <img src="./images/logo.svg" alt="" width="205" height="589" class="logo-img">
+          </p>
+        </a>
+      </div><!--/logo-area-->
+      <div id="b-menu">
+        <!--ハンバーガーメニューのボタン-->
+        <div class="hamburger_btn" v-on:click='ActiveBtn=!ActiveBtn'>
+          <span class="line line_01" v-bind:class="{'btn_line01':ActiveBtn}"></span>
+          <span class="line line_02" v-bind:class="{'btn_line02':ActiveBtn}"></span>
+          <span class="line line_03" v-bind:class="{'btn_line03':ActiveBtn}"></span>
+        </div><!--/#b-menu-->
+        <!--サイドバー-->
+        <transition name="menu">
+          <div class="menu w-f" v-show="ActiveBtn">
+              <ul>
+                  <li><a href="#" class="fs-m">項目1</a></li>
+                  <li><a href="#" class="fs-m">項目2</a></li>
+                  <li><a href="#" class="fs-m">項目3</a></li>
+                  <li><a href="#" class="fs-m">項目4</a></li>
+                  <li><a href="#" class="fs-m">項目5</a></li>
+              </ul>
+          </div>
+      </transition>
+      </div>
+    </header>
+    <div class="content-wrapper w-f margin-btm-l">
+      <div class="slider">
+        <div id="app">
+          <div class="slider-outer relative margin-btm-s w-f">
+            <transition name="fade">
+              <div class="slider-inner absolute" :key="idx" v-for="(slide, idx) in slides" v-if="current_slide == idx">
+                <img class="slide-img" v-bind:src="slides[idx].img" :key="slides[idx].img" width="450" height="300">
+              </div>
+            </transition>
+          </div>
+          <div class="padding-xs margin-btm">
+            <h1 class="title fs-m align-center lh-s d-ib"><span class="fam-head d-ib">那覇市久茂地の居酒屋</span><br><span class="fam-name fs-ll font-yuji d-ib">呑兵衛</span></h1>
+          </div>
+        </div><!--/#app-->
+      </div><!--/slider-->
+      <div class="fader margin-btm-l padding-xs">
+        <h2 class="mds padding-ym fs-l font-yuji">お品書き</h2>
+        <div id="fade">
+          <div class="margin-btm-s">
+              <div class="shinagaki-pic relative">
+                <img src="./images/test5.jpg" alt="" srcset="" class="img">
+              </div>
+              <div class="shinagaki-desc w-f">
+                <h3 class="padding-ys">焼鳥</h3>
+                <p class="desc"><span>炭火で時間をかけて焼き上げた、</span><span>沖縄県産地鶏。</span></p>
+              </div>
+          </div>
+          <div class="margin-btm-s">
+              <div class="shinagaki-pic relative">
+                <img src="./images/test6.jpg" alt="" srcset="" class="img">
+              </div>
+              <div class="shinagaki-desc w-f">
+                <h3 class="padding-ys">えいひれ</h3>
+                <p class="desc"><span></span>弱火でじっくり炙った、</span><span>濃い味のヒレ。</span></p>
+              </div>
+          </div>
+          <fade-in>
+            <div class="top-shinagaki-fade margin-btm-s">
+              <div class="shinagaki-pic relative">
+                <img src="./images/test2.jpg" alt="" srcset="" class="img">
+              </div>
+              <div class="shinagaki-desc w-f">
+                <h3 class="padding-ys">漬物</h3>
+                <p class="desc"><span>自家製のこだわり漬物。</span><span>歯応えがあり</span><span>お酒が</span><span>すすみます。</span></p>
+              </div>
+            </div>
+          </fade-in>
+          <fade-in>
+            <div class="top-shinagaki-fade margin-btm-s">
+              <div class="shinagaki-pic relative">
+                <img src="./images/test3.jpg" alt="" srcset="" class="img">
+              </div>
+              <div class="shinagaki-desc w-f">
+                <h3 class="padding-ys">珍味</h3>
+                <p class="desc"><span>さっぱり味の</span><span>島らっきょうを、</span><span>温めて</span><span>お出しします。</span></p>
+              </div>
+            </div>
+          </fade-in>
+          <fade-in>
+            <div class="top-shinagaki-fade margin-btm-s">
+              <div class="shinagaki-pic relative">
+                <img src="./images/test4.jpg" alt="" srcset="" class="img">
+              </div>
+              <div class="shinagaki-desc w-f">
+                <h3 class="padding-ys">鍋もの</h3>
+                <p class="desc"><span>朝から仕込み、</span><span>濃い出汁が</span><span>具によく</span><span>染みて</span><span>美味いです。</span></p>
+              </div>
+            </div>
+          </fade-in>
+          <fade-in style="width: 100%;">
+            <div class="link align-right">
+              <a href="#">
+                <p class="d-ib link-btn"><span>メニューを</span><br><span>もっと見る</span></p>
+              </a>
+            </div>
+          </fade-in>
+        </div><!--/fade-->
+      </div><!--/fader-->
+      <div class="floor-wrap margin-btm-l relative">
+        <div class="floor-container margin-btm-s">
+          <div class="flex">
+            <div class="floor-desc padding-ys">
+              <p class="desc"><span>味のある店内に、</span><span>優しく声を</span><span>かけてくれる</span><span>大将。</span><span>贅沢だけど</span><span>ちょっとだけ</span><span>実家のような</span><span>暖かさもある</span><span>寛ぎの空間を</span><span>意識しています。</span></p>
+            </div>
+            <h2 class="mds floor-mds fs-l font-yuji">寛ぎの空間</h2>
+          </div>
+          <div class="floor-pic-container relative flex">
+            <p class="floor-pic first-floor">
+              <img src="./images/interior1.png" alt="" srcset="">
+            </p>
+            <p class="floor-pic second-floor">
+              <img src="./images/interior.png" alt="" srcset="">
+            </p>
+          </div>
+        </div>
+        <div class="link padding-xs align-right">
+          <a href="#">
+            <p class="d-ib link-btn"><span>店内を</span><br><span>もっと見る</span></p>
+          </a>
+        </div>
+      </div><!--/floor-wrap-->
+      <div class="news padding-xs margin-btm-l">
+        <h2 class="mds fs-l font-yuji padding-ym">新着情報</h2>
+        <div class="tw">
+          <a class="twitter-timeline" data-lang="ja" data-width="360" data-height="360" data-theme="light" href="https://twitter.com/webhann?ref_src=twsrc%5Etfw">Tweets by webhann</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="fb"></div>
+      </div><!--/news-->
+      <div class="infomation-wrapper">
+        <h2 class="mds fs-l font-yuji padding-xs padding-ym">店舗情報</h2>
+        <div class="map margin-btm-s">
+          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d894.5476908360288!2d127.71108023631515!3d26.255471464579905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56b9ce5c347c3%3A0xe83c75258be0facd!2z44OV44Kh44Of44Oq44O844Oe44O844OIIOWfjumWk-S6jOS4geebruW6lw!5e0!3m2!1sja!2sjp!4v1639277677272!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="link-to-map padding-xs align-right">
+            <a href="https://goo.gl/maps/4Xkm6unKkN8HvA9KA" rel="noopener" target="_blank">
+              <p class="d-ib link-btn">GoogleMapの<br>アプリを開く</p>
+            </a>
+          </div>
+        </div><!--/map-->
+        <div class="info-container padding-xs">
+          <dl class="info fs-m padding-ys">
+            <dt>店舗所在地</dt>
+            <dd class="margin-btm-s">浦添市城間2丁目18-5</dd>
+            <dt>営業時間</dt>
+            <dd class="margin-btm-s">夜6：00〜深夜12：00</dd>
+            <dt>定休日</dt>
+            <dd class="margin-btm-s">日曜日・月曜日・年末年始</dd>
+            <dt>提供ジャンル</dt>
+            <dd class="margin-btm-s">和食・沖縄料理</dd>
+            <dt>座席数</dt>
+            <dd class="margin-btm-s">60席</dd>
+            <dt>予約</dt>
+            <dd class="margin-btm-s">可（お電話・メール）</dd>
+            <dt>電話番号</dt>
+            <dd class="lh-s margin-btm-s"><a href="tel:">098−123−4567<br>電話する</a></dd>
+            <dt>メール</dt>
+            <dd class="lh-s margin-btm-s"><a href="mailto:">nonbee-info@gmail.com<br>メールする</a></dd>
+            <dt>お支払い</dt>
+            <dd class="desc lh-s margin-btm-s"><span>現金・</span><span>PayPay・Suica・</span><span>クレジット（Visa/JCB/Master）</span></dd>
+            <dt></dt>
+            <dd></dd>
+            <dt></dt>
+            <dd></dd>
+          </dl>
+        </div><!--/info-container-->
+      </div><!--/infomation-wrapper-->
+    </div><!--/content-wrapper-->
+    <footer class="footer bg-gc padding-ys align-center">
+      <div class="footer-menu padding-ym margin-btm-s">
+        <a href="" class="footer-menu-link">
+          <p class="fs-m lh-s">お品書き一覧</p>
+        </a>
+        <a href="" class="footer-menu-link">
+          <p class="fs-m lh-s">店内の写真</p>
+        </a>
+        <a href="" class="footer-menu-link">
+          <p class="fs-m lh-s">新着情報<br>(Twitter)</p>
+        </a>
+        <a href="" class="footer-menu-link">
+          <p class="fs-m lh-s">個人情報<br>保護方針</p>
+        </a>
+      </div>
+      <small>&copy;呑兵衛&nbsp;All&nbsp;Rights&nbsp;Reserved.</small>
+    </footer>
+    <script src="./assets/bottom.js"></script>
+</body>
+</html>
