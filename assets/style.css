@@ -312,6 +312,7 @@ iframe {
     grid-template-columns: 1fr 1fr;
     gap: 40px 0;
     align-self: center;
+    justify-items: center;
 }
 .footer-menu-link {
     text-decoration: none;
