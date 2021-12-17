@@ -12,6 +12,11 @@
 .padding-xs {
     padding-right: 32px;
     padding-left: 32px;
+    max-width: 1200px;
+    margin: auto;
+}
+.margin-btm-l {
+    margin-bottom: 160px !important;
 }
 .menu ul {
     margin: 1rem auto;
@@ -45,10 +50,13 @@
 }
 .flex {
     align-items: center;
+    max-width: 1200px;
+    margin: auto;
 }
 .floor-desc {
     padding-top: 32px;
     padding-bottom: 32px;
+    margin-top: -24px;
 }
 .first-floor {
     margin-left: 40px;
@@ -91,6 +99,7 @@
     }
     .infomation-wrapper {
         width: 88%;
+        max-width: 1200px;
         margin: 0 auto;
     }
     .map {
