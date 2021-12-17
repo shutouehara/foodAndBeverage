@@ -64,11 +64,11 @@
         <transition name="menu">
           <div class="menu w-f" v-show="ActiveBtn">
               <ul>
-                  <li><a href="#" class="fs-m Yuji">お品書き</a></li>
-                  <li><a href="#" class="fs-m Yuji">店内の写真</a></li>
-                  <li><a href="#" class="fs-m Yuji">新着情報</a></li>
-                  <li><a href="#" class="fs-m Yuji">店舗情報</a></li>
-                  <li><a href="#" class="fs-m Yuji">お問い合わせ</a></li>
+                  <li><a href="#shinagaki" class="fs-m font-yuji">お品書き</a></li>
+                  <li><a href="#floor" class="fs-m font-yuji">店内の写真</a></li>
+                  <li><a href="#news" class="fs-m font-yuji">新着情報</a></li>
+                  <li><a href="#info" class="fs-m font-yuji">店舗情報</a></li>
+                  <li><a href="#" class="fs-m font-yuji">お問い合わせ</a></li>
               </ul>
           </div>
       </transition>
@@ -89,7 +89,7 @@
           </div>
         </div><!--/#app-->
       </div><!--/slider-->
-      <div class="fader margin-btm-l padding-xs">
+      <div id="shinagaki" class="fader margin-btm-l padding-xs">
         <h2 class="mds padding-ym fs-l font-yuji">お品書き</h2>
         <div id="fade">
           <div class="margin-btm-s">
@@ -152,7 +152,7 @@
           </fade-in>
         </div><!--/fade-->
       </div><!--/fader-->
-      <div class="floor-wrap margin-btm-l relative">
+      <div id="floor" class="floor-wrap margin-btm-l relative">
         <div class="floor-container margin-btm-s">
           <div class="flex">
             <div class="floor-desc padding-ys">
@@ -175,14 +175,14 @@
           </a>
         </div>
       </div><!--/floor-wrap-->
-      <div class="news padding-xs margin-btm-l">
+      <div id="news" class="news padding-xs margin-btm-l">
         <h2 class="mds fs-l font-yuji padding-ym">新着情報</h2>
         <div class="tw">
           <a class="twitter-timeline" data-lang="ja" data-width="360" data-height="360" data-theme="light" href="https://twitter.com/webhann?ref_src=twsrc%5Etfw">Tweets by webhann</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <div class="fb"></div>
       </div><!--/news-->
-      <div class="infomation-wrapper">
+      <div id="info" class="infomation-wrapper">
         <h2 class="mds fs-l font-yuji padding-xs padding-ym">店舗情報</h2>
         <div class="map margin-btm-s">
           <div>
