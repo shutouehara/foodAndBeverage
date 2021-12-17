@@ -99,13 +99,13 @@ iframe {
 }
 .link-btn:before {
     font-family: 'Font Awesome 5 Free';
-    content: '\f30b';
+    content: '\f25a';
     font-size: 2rem;
-    font-weight: normal;
+    font-weight: bold;
     display: inline-block;
     position: absolute;
     bottom: 0;
-    right: 32px;
+    right: 0;
 }
 .link-btn:after {
     content: '';
