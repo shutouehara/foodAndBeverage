@@ -15,11 +15,11 @@
     <meta name="description" content="">
     <link rel="canonical" href="">
 
-    <link rel="icon" href="" sizes="16x16" type="image/png">
-    <link rel="icon" href="" sizes="32x32" type="image/png">
-    <link rel="icon" href="" sizes="62x62" type="image/png">
+    <!--<link rel="icon" href="" sizes="16x16" type="image/png">
+    <link rel="icon" href="" sizes="32x32" type="image/png">-->
+    <link rel="icon" href="./images/favicon.png" sizes="62x62" type="image/png">
     <link rel="apple-touch-icon-precomposed" href="" /><!--size:150x15--->
-    
+
     <meta property="og:locale" content="ja_JP"/>
     <meta property="og:site_name" content=""/>
     <meta property="og:type" content="website"/>
@@ -49,7 +49,7 @@
       <div class="logo-area">
         <a href="/">
           <p class="logo">
-            <svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 360"><defs><style>.cls-1{writing-mode:tb;text-orientation:upright;glyph-orientation-vertical:0deg;font-size:120px;fill:#fff;font-family:YujiSyuku-Regular, Yuji Syuku;}</style></defs><text class="cls-1" transform="translate(60 0)">呑兵衛</text></svg>
+            <img src="./images/logo.svg" alt="" width="205" height="589" class="logo-img">
           </p>
         </a>
       </div><!--/logo-area-->
@@ -64,11 +64,11 @@
         <transition name="menu">
           <div class="menu w-f" v-show="ActiveBtn">
               <ul>
-                  <li><a href="#" class="fs-m">項目1</a></li>
-                  <li><a href="#" class="fs-m">項目2</a></li>
-                  <li><a href="#" class="fs-m">項目3</a></li>
-                  <li><a href="#" class="fs-m">項目4</a></li>
-                  <li><a href="#" class="fs-m">項目5</a></li>
+                  <li><a href="#shinagaki" class="fs-m font-yuji">お品書き</a></li>
+                  <li><a href="#floor" class="fs-m font-yuji">店内の写真</a></li>
+                  <li><a href="#news" class="fs-m font-yuji">新着情報</a></li>
+                  <li><a href="#info" class="fs-m font-yuji">店舗情報</a></li>
+                  <li><a href="#" class="fs-m font-yuji">お問い合わせ</a></li>
               </ul>
           </div>
       </transition>
@@ -89,7 +89,7 @@
           </div>
         </div><!--/#app-->
       </div><!--/slider-->
-      <div class="fader margin-btm-l padding-xs">
+      <div id="shinagaki" class="fader margin-btm-l padding-xs">
         <h2 class="mds padding-ym fs-l font-yuji">お品書き</h2>
         <div id="fade">
           <div class="margin-btm-s">
@@ -107,7 +107,7 @@
               </div>
               <div class="shinagaki-desc w-f">
                 <h3 class="padding-ys">えいひれ</h3>
-                <p class="desc"><span>弱火でじっくり炙った、</span><span>濃い味のヒレ。</span></p>
+                <p class="desc"><span></span>弱火でじっくり炙った、</span><span>濃い味のヒレ。</span></p>
               </div>
           </div>
           <fade-in>
@@ -143,16 +143,16 @@
               </div>
             </div>
           </fade-in>
-          <fade-in>
+          <fade-in style="width: 100%;">
             <div class="link align-right">
-              <a href="./menu.html">
+              <a href="#">
                 <p class="d-ib link-btn"><span>メニューを</span><br><span>もっと見る</span></p>
               </a>
             </div>
           </fade-in>
         </div><!--/fade-->
       </div><!--/fader-->
-      <div class="floor-wrap margin-btm-l relative">
+      <div id="floor" class="floor-wrap margin-btm-l relative">
         <div class="floor-container margin-btm-s">
           <div class="flex">
             <div class="floor-desc padding-ys">
@@ -175,14 +175,14 @@
           </a>
         </div>
       </div><!--/floor-wrap-->
-      <div class="news padding-xs margin-btm-l">
+      <div id="news" class="news padding-xs margin-btm-l">
         <h2 class="mds fs-l font-yuji padding-ym">新着情報</h2>
         <div class="tw">
           <a class="twitter-timeline" data-lang="ja" data-width="360" data-height="360" data-theme="light" href="https://twitter.com/webhann?ref_src=twsrc%5Etfw">Tweets by webhann</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <div class="fb"></div>
       </div><!--/news-->
-      <div class="infomation-wrapper">
+      <div id="info" class="infomation-wrapper">
         <h2 class="mds fs-l font-yuji padding-xs padding-ym">店舗情報</h2>
         <div class="map margin-btm-s">
           <div>
