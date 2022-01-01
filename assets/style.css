@@ -267,6 +267,11 @@ iframe {
 .shinagaki-pic {
     overflow: hidden;
     border-radius: 8px;
+    width: 100%;
+    padding-bottom: 64%;
+}
+.shinagaki-pic>.img {
+    position: absolute;
 }
 .img {
     border-radius: 8px;
