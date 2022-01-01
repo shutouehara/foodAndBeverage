@@ -76,7 +76,7 @@
     </header>
     <div class="content-wrapper w-f margin-btm-l">
       <div class="slider">
-        <div id="app">
+        <div id="app" class="margin-btm">
           <div class="slider-outer relative margin-btm-s w-f">
             <transition name="fade">
               <div class="slider-inner absolute" :key="idx" v-for="(slide, idx) in slides" v-if="current_slide == idx">
@@ -85,59 +85,183 @@
             </transition>
           </div>
           <div class="padding-xs margin-btm">
-            <h1 class="title fs-ll align-center lh-s d-ib"><span class="fam-head d-ib">お品書き</span></h1>
+            <h1 class="title fs-ll align-center lh-s d-ib"><span class="fam-head d-ib font-yuji">お品書き</span></h1>
           </div>
         </div><!--/#app-->
       </div><!--/slider-->
       <div class="fader margin-btm-l padding-xs">
         <h2 class="mds padding-ym fs-l font-yuji">焼きもの</h2>
-        <div class="margin-btm-s">
+        <div id="fade" class="margin-btm">
+          <div class="margin-btm-s">
             <div class="shinagaki-pic relative">
-                <img src="./images/test5.jpg" alt="" srcset="" class="img">
-            </div>
+              <img src="./images/test5.jpg" alt="" srcset="" class="img">
+            </div><!--/shinagaki-pic-->
             <div class="shinagaki-desc w-f">
-                <h3 class="padding-ys">焼鳥</h3>
-                <p class="desc"><span>炭火で時間をかけて焼き上げた、</span><span>沖縄県産地鶏。</span></p>
-            </div>
-        </div>
-        <div class="margin-btm-s">
-            <div class="shinagaki-pic relative">
+              <h3 class="padding-ys">焼鳥</h3>
+              <p class="desc"><span>炭火で時間をかけて焼き上げた、</span><span>沖縄県産地鶏。</span></p>
+              <p class="desc">¥400</p>
+            </div><!--/shinagaki-desc-->
+          </div><!--/margin-btm-s-->
+          <div class="margin-btm-s">
+              <div class="shinagaki-pic relative">
                 <img src="./images/test6.jpg" alt="" srcset="" class="img">
-            </div>
-            <div class="shinagaki-desc w-f">
+              </div><!--/shinagaki-pic-->
+              <div class="shinagaki-desc w-f">
                 <h3 class="padding-ys">えいひれ</h3>
                 <p class="desc"><span>弱火でじっくり炙った、</span><span>濃い味のヒレ。</span></p>
-            </div>
-        </div>
+                <p class="desc">¥400</p>
+              </div><!--/shinagaki-desc-->
+          </div><!--/margin-btm-s-->
+          <div class="margin-btm-s">
+            <div class="shinagaki-pic relative">
+              <img src="./images/test5.jpg" alt="" srcset="" class="img">
+            </div><!--/shinagaki-pic-->
+            <div class="shinagaki-desc w-f">
+              <h3 class="padding-ys">焼鳥</h3>
+              <p class="desc"><span>炭火で時間をかけて焼き上げた、</span><span>沖縄県産地鶏。</span></p>
+              <p class="desc">¥400</p>
+            </div><!--/shinagaki-desc-->
+          </div><!--/margin-btm-s-->
+          <div class="margin-btm-s">
+            <div class="shinagaki-pic relative">
+              <img src="./images/test5.jpg" alt="" srcset="" class="img">
+            </div><!--/shinagaki-pic-->
+            <div class="shinagaki-desc w-f">
+              <h3 class="padding-ys">焼鳥</h3>
+              <p class="desc"><span>炭火で時間をかけて焼き上げた、</span><span>沖縄県産地鶏。</span></p>
+              <p class="desc">¥400</p>
+            </div><!--/shinagaki-desc-->
+          </div><!--/margin-btm-s-->
+          <div class="margin-btm-s">
+            <div class="shinagaki-pic relative">
+              <img src="./images/test5.jpg" alt="" srcset="" class="img">
+            </div><!--/shinagaki-pic-->
+            <div class="shinagaki-desc w-f">
+              <h3 class="padding-ys">焼鳥</h3>
+              <p class="desc"><span>炭火で時間をかけて焼き上げた、</span><span>沖縄県産地鶏。</span></p>
+              <p class="desc">¥400</p>
+            </div><!--/shinagaki-desc-->
+          </div><!--/margin-btm-s-->
+        </div><!--/fade-->
         <h2 class="mds padding-ym fs-l font-yuji">漬けもの</h2>
-        <div class="margin-btm-s">
+        <div id="fade" class="margin-btm">
+          <div class="margin-btm-s">
             <div class="shinagaki-pic relative">
-                <img src="./images/test2.jpg" alt="" srcset="" class="img">
-            </div>
+              <img src="./images/test2.jpg" alt="" srcset="" class="img">
+            </div><!--/shinagaki-pic-->
             <div class="shinagaki-desc w-f">
-                <h3 class="padding-ys">漬物</h3>
-                <p class="desc"><span>自家製のこだわり漬物。</span><span>歯応えがあり</span><span>お酒が</span><span>すすみます。</span></p>
-            </div>
-        </div>
-        <div class="margin-btm-s">
+              <h3 class="padding-ys">漬物</h3>
+              <p class="desc"><span>自家製のこだわり漬物。</span><span>歯応えがあり</span><span>お酒が</span><span>すすみます。</span></p>
+              <p class="desc">¥400</p>
+            </div><!--/shinagaki-desc-->
+          </div><!--/margin-btm-s-->
+          <div class="margin-btm-s">
             <div class="shinagaki-pic relative">
-                <img src="./images/test3.jpg" alt="" srcset="" class="img">
-            </div>
+              <img src="./images/test3.jpg" alt="" srcset="" class="img">
+            </div><!--/shinagaki-pic-->
             <div class="shinagaki-desc w-f">
-                <h3 class="padding-ys">珍味</h3>
-                <p class="desc"><span>さっぱり味の</span><span>島らっきょうを、</span><span>温めて</span><span>お出しします。</span></p>
-            </div>
-        </div>
+              <h3 class="padding-ys">珍味</h3>
+              <p class="desc"><span>さっぱり味の</span><span>島らっきょうを、</span><span>温めて</span><span>お出しします。</span></p>
+              <p class="desc">¥400</p>
+            </div><!--/shinagaki-desc-->
+          </div><!--/margin-btm-s-->
+          <div class="margin-btm-s">
+            <div class="shinagaki-pic relative">
+              <img src="./images/test2.jpg" alt="" srcset="" class="img">
+            </div><!--/shinagaki-pic-->
+            <div class="shinagaki-desc w-f">
+              <h3 class="padding-ys">漬物</h3>
+              <p class="desc"><span>自家製のこだわり漬物。</span><span>歯応えがあり</span><span>お酒が</span><span>すすみます。</span></p>
+              <p class="desc">¥400</p>
+            </div><!--/shinagaki-desc-->
+          </div><!--/margin-btm-s-->
+          <div class="margin-btm-s">
+            <div class="shinagaki-pic relative">
+              <img src="./images/test2.jpg" alt="" srcset="" class="img">
+            </div><!--/shinagaki-pic-->
+            <div class="shinagaki-desc w-f">
+              <h3 class="padding-ys">漬物</h3>
+              <p class="desc"><span>自家製のこだわり漬物。</span><span>歯応えがあり</span><span>お酒が</span><span>すすみます。</span></p>
+              <p class="desc">¥400</p>
+            </div><!--/shinagaki-desc-->
+          </div><!--/margin-btm-s-->
+        </div><!--/fade-->
         <h2 class="mds padding-ym fs-l font-yuji">煮もの</h2>
-        <div class="margin-btm-s">
+        <div id="fade" class="margin-btm">
+          <div class="margin-btm-s">
             <div class="shinagaki-pic relative">
                 <img src="./images/test4.jpg" alt="" srcset="" class="img">
-            </div>
+            </div><!--/shinagaki-pic-->
             <div class="shinagaki-desc w-f">
                 <h3 class="padding-ys">鍋もの</h3>
                 <p class="desc"><span>朝から仕込み、</span><span>濃い出汁が</span><span>具によく</span><span>染みて</span><span>美味いです。</span></p>
-            </div>
-        </div>
+                <p class="desc">¥400</p>
+            </div><!--/shinagaki-desc-->
+          </div><!--/margin-btm-s-->
+          <div class="margin-btm-s">
+            <div class="shinagaki-pic relative">
+                <img src="./images/ni.jpeg" alt="" srcset="" class="img">
+            </div><!--/shinagaki-pic-->
+            <div class="shinagaki-desc w-f">
+                <h3 class="padding-ys">鍋もの</h3>
+                <p class="desc"><span>朝から仕込み、</span><span>濃い出汁が</span><span>具によく</span><span>染みて</span><span>美味いです。</span></p>
+                <p class="desc">¥400</p>
+            </div><!--/shinagaki-desc-->
+          </div><!--/margin-btm-s-->
+          <div class="margin-btm-s">
+            <div class="shinagaki-pic relative">
+                <img src="./images/ni.jpeg" alt="" srcset="" class="img">
+            </div><!--/shinagaki-pic-->
+            <div class="shinagaki-desc w-f">
+                <h3 class="padding-ys">鍋もの</h3>
+                <p class="desc"><span>朝から仕込み、</span><span>濃い出汁が</span><span>具によく</span><span>染みて</span><span>美味いです。</span></p>
+                <p class="desc">¥400</p>
+            </div><!--/shinagaki-desc-->
+          </div><!--/margin-btm-s-->
+          <div class="margin-btm-s">
+            <div class="shinagaki-pic relative">
+                <img src="./images/ni.jpeg" alt="" srcset="" class="img">
+            </div><!--/shinagaki-pic-->
+            <div class="shinagaki-desc w-f">
+                <h3 class="padding-ys">鍋もの</h3>
+                <p class="desc"><span>朝から仕込み、</span><span>濃い出汁が</span><span>具によく</span><span>染みて</span><span>美味いです。</span></p>
+                <p class="desc">¥400</p>
+            </div><!--/shinagaki-desc-->
+          </div><!--/margin-btm-s-->
+        </div><!--/fade-->
+        <h2 class="mds padding-ym fs-l font-yuji">さけ</h2>
+        <div id="fade" class="margin-btm">
+          <div class="margin-btm-s">
+            <div class="shinagaki-pic relative">
+                <img src="./images/sake.jpeg" alt="" srcset="" class="img">
+            </div><!--/shinagaki-pic-->
+            <div class="shinagaki-desc w-f">
+                <h3 class="padding-ys">泡盛</h3>
+                <p class="desc"><span>琉球泡盛を</span><span>氷で割ります。</span><span>独特な</span><span>風味を</span><span>お楽しみください。</span></p>
+                <p class="desc">¥400</p>
+            </div><!--/shinagaki-desc-->
+          </div><!--/margin-btm-s-->
+          <div class="margin-btm-s">
+            <div class="shinagaki-pic relative">
+                <img src="./images/sake_1.jpeg" alt="" srcset="" class="img">
+            </div><!--/shinagaki-pic-->
+            <div class="shinagaki-desc w-f">
+                <h3 class="padding-ys">焼酎</h3>
+                <p class="desc"><span>芋の香りが</span><span>濃い</span><span>最高の</span><span>焼酎です。</span></p>
+                <p class="desc">¥400</p>
+            </div><!--/shinagaki-desc-->
+          </div><!--/margin-btm-s-->
+          <div class="margin-btm-s">
+            <div class="shinagaki-pic relative">
+                <img src="./images/sake_2.jpeg" alt="" srcset="" class="img">
+            </div><!--/shinagaki-pic-->
+            <div class="shinagaki-desc w-f">
+                <h3 class="padding-ys">ビール</h3>
+                <p class="desc"><span>沖縄名物の</span><span>オリオン</span><span>ビール</span><span>です。</span></p>
+                <p class="desc">¥400</p>
+            </div><!--/shinagaki-desc-->
+          </div><!--/margin-btm-s-->
+        </div><!--/fade-->
       </div><!--/fader-->
       <div class="floor-wrap margin-btm-l relative">
         <div class="floor-container margin-btm-s">
@@ -149,10 +273,10 @@
           </div>
           <div class="floor-pic-container relative flex">
             <p class="floor-pic first-floor">
-              <img src="./images/interior1.png" alt="" srcset="">
+              <img src="./images/yaki.jpg" alt="" srcset="">
             </p>
             <p class="floor-pic second-floor">
-              <img src="./images/interior.png" alt="" srcset="">
+              <img src="./images/yaki_1.jpg" alt="" srcset="">
             </p>
           </div>
         </div>
