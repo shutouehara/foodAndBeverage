@@ -331,3 +331,13 @@ iframe {
     font-weight: bold;
     margin: 0 0 8px;
 }
+.info dd {
+    margin-left: 24px;
+    position: relative;
+}
+.info dd:before {
+    content: 'L';
+    position: absolute;
+    left: -16px;
+    top: -8px;
+}
