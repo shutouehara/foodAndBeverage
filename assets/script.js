@@ -4,10 +4,10 @@ window.onload=function(){
       data: {
         current_slide: 0,
         slides: [
-          {img: './images/test1.jpg'},
-          {img: './images/test2.jpg'},
-          {img: './images/test3.jpg'},
-          {img: './images/test4.jpg'}
+          {img: './images/test1.webp'},
+          {img: './images/test2.webp'},
+          {img: './images/test3.webp'},
+          {img: './images/test4.webp'}
         ],
       },
       mounted() {
