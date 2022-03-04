@@ -81,7 +81,7 @@
           <div class="slider-outer relative margin-btm-s w-f">
             <transition name="fade">
               <div class="slider-inner absolute" :key="idx" v-for="(slide, idx) in slides" v-if="current_slide == idx">
-                <img class="slide-img" v-bind:src="slides[idx].img" :key="slides[idx].img" width="450" height="300">
+                <img class="slide-img" v-bind:src="slides[idx].img" :key="slides[idx].img" width="450" height="300" loading="eager" />
               </div>
             </transition>
           </div>
